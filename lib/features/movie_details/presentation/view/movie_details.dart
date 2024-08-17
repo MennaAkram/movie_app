@@ -11,14 +11,10 @@ import 'package:movie_app/shared/widgets/movie_card.dart';
 
 class MovieDetailsScreen extends StatelessWidget {
   final int movieId;
-  final ResultsEntity movie;
-  final MovieDetailsEntity? movieDetails;
 
   const MovieDetailsScreen({
     Key? key,
     required this.movieId,
-    required this.movie,
-    this.movieDetails,
   }) : super(key: key);
 
   @override

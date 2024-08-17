@@ -12,10 +12,8 @@ class AppRouter {
 
       case '/movie_details':
         final args = settings.arguments as Map<String, dynamic>;
-        final movie = args['movie'] as ResultsEntity;
-        final movieDetails = args['movieDetails'] as MovieDetailsEntity?;
         final movieId = args['movieId'] as int;
-        return MaterialPageRoute(builder: (_) => MovieDetailsScreen(movieId: movieId, movie: movie, movieDetails: movieDetails));
+        return MaterialPageRoute(builder: (_) => MovieDetailsScreen(movieId: movieId));
     }
   }
 }

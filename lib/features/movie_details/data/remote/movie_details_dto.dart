@@ -128,15 +128,11 @@ class MovieDetailsDto extends BaseMapper<MovieDetailsDto> {
 
   MovieDetailsEntity toEntity() {
     return MovieDetailsEntity(
-      adult: adult ?? false,
       genres: genres?.map((e) => e.toEntity()).toList() ?? [],
       id: id ?? 0,
       overview: overview ?? '',
       posterPath: posterPath ?? '',
-      releaseDate: releaseDate ?? '',
       title: title ?? '',
-      voteAverage: voteAverage ?? 0.0,
-      voteCount: voteCount ?? 0,
     );
   }
 }

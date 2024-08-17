@@ -84,20 +84,11 @@ class ResultsDto extends BaseMapper<ResultsDto> {
 
  ResultsEntity toEntity() {
     return ResultsEntity(
-      adult: adult,
-      backdropPath: backdropPath,
-      genreIds: genreIds,
-      id: id,
-      originalLanguage: originalLanguage,
-      originalTitle: originalTitle,
-      overview: overview,
-      popularity: popularity,
-      posterPath: posterPath,
-      releaseDate: releaseDate,
-      title: title,
-      video: video,
-      voteAverage: voteAverage,
-      voteCount: voteCount,
+      genreIds: genreIds ?? [],
+      id: id ?? 0,
+      overview: overview ?? '',
+      posterPath: posterPath ?? '',
+      title: title ?? '',
     );
   }
 }
